@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio Timo Breukers</title>
+  <link rel="stylesheet" type="text/css" href="opmaak.css">
+  <link href="https://api.openweathermap.org/data/2.5/weather?q=Winterswijk&APPID=0fc9f2d6aa3b2717eb5d9bf53b61d152" rel="stylesheet"> 
+</head>
+
+<!-- Navigatiebalk -->
+<body>
+
+  <div id="navbar">
+    <div id="logo">Portfolio MSI Timo Breukers</div>
+    <div id="navbar-right">
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Leerdoelen ⌵
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="leerdoelen.html">Opgestelde leerdoelen</a>
+          <a href="ontwikkelingen.html">Ontwikkelingen</a>
+          <a class="active" href="conclusie.html">Conclusie</a>
+        </div>
+      </div>
+      <a href="smartme.html">Smart Me</a>
+      <a href="connection.html">Smart Connection</a>
+      <a href="technology.html">Smart Technology</a>
+      <a href="business.html">Smart Business</a>
+      <a href="project.html">Smart Project</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "42px 10px";
+      document.getElementById("logo").style.fontSize = "25px";
+    } else {
+      document.getElementById("navbar").style.padding = "60px 10px";
+      document.getElementById("logo").style.fontSize = "35px";
+    }
+  }
+  </script>
+
+
+  </body>
+
+  <div class="container">
+    <div style="margin-top:210px;padding:15px 15px ">      
+      <p><b><FONT size="+3"><FONT color="#2a639d"> Conclusie</FONT></FONT></b></p>
+      <p>In de conclusie komen het algemene leerdoel en de ondersteunende leerdoelen van de modules terug. Er is een algemene conclusie gevormd die onder andere concludeert in hoeverre het algemene leerdoel behaald is. Voordat u deze webpagina doorneemt, raad ik u aan om eerst de andere webpagina's te bezoeken hierdoor wordt dit verhaal namelijk ondersteund.</p>
+        <br></br>
+    <hr></hr>
+          <p><i><FONT size="+2">Een basisniveau van kennis over de techniek ontwikkelen zodat ik later in het werkveld kan communiceren met mensen met technische kennis.<br></br><br><b>Algemene conclusie</b></br></i></FONT></p>
+          <p>Tijdens de minor Smart Industry heb ik vanuit meerdere kanten de techniek benaderd. Van zowel de theoretische kant met bijvoorbeeld uitleg over code programmering, HTML, CSS, JavaScript en Machine Learning als van de praktische kant door de AXA casus, bedrijfsbezoek bij ELK, bouwen van eigen website, de slimme plant, ontwikkelen van animatiefilmpje en het project bij Impact Smart Solutions.</p>    
+          <p>Ook heb ik tijdens de minor veel gehad aan mijn technische medestudenten waar ik mijn technische vragen kwijt kon. Hier heb ik dan ook op een fijne manier gebruik van kunnen maken door de verkregen ondersteuning tijdens het bouwen van de slimme plant en het ontwerpen van het 3D bakje via SolidWorks. Als tegenprestatie heb ik mijn bedrijfskundige kennis kunnen delen tijdens bijvoorbeeld de AXA casus, de structurering van het project en de managementgames. Naar mijn mening is dit een mooie manier van het delen van kennis geweest. Waar ik uiteraard in het technische kennis ontvangende gedeelte veel nieuwe kennis heb opgedaan maar ook het delen van de bedrijfskundige kennis heeft door het geven van de uitleg extra duidelijkheid voor mijzelf gecreëerd over bepaalde onderwerpen.</p>
+          <p>Tijdens het project heb ik vooral door de bedrijfskundige vraagstukken, structurering en procesbewaking veel inbreng kunnen hebben in de groep. Door mijn verantwoordelijkheden te nemen op het gebied van communicatie en aansturing, heb ik mij ook zeker niet verstopt in de groep. Door dus bewust een actievere rol te nemen, heb ik mij ondanks dat ik meer introvert ben toch veel van mij kunnen laten horen binnen de groep. Tevens vond ik het ook wel fijn en leuk om de structuur binnen de groep te behouden en deze rollen aan te nemen, dit werd ook door de groepsgenoten zeer gewaardeerd. Hiernaast zou ik in een volgend stadium beter willen worden in het managen van gesprekken. Ik merkte tijdens het project dat ik het toch wel lastig vond om mensen te onderbreken op het moment dat er teveel afgedwaald werd van het onderwerp. Dit zou ik kunnen doen door een strakke agenda te maken voor een vergadering waarmee rekening gehouden wordt met tijdsplanning. </p>
+          <p>Over het algemeen ben ik zeer tevreden met mijn eigen technische ontwikkelingen tijdens deze minor. En hebben de workshops en het project geholpen bij het verbreden van mijn kennis op dit vlak waardoor mijn ogen ook zeker geopend zijn naar de mogelijkheden die er allemaal al bestaan en waar de ontwikkelingen liggen. Hier ga ik tijdens het afstuderen en later in het werkveld absoluut profijt van hebben. Niet zo zeer in de praktische uitvoer van zulke projecten maar wel in het aansturen en aanbevelen van projecten waarbij slimme technische oplossingen kunnen worden toegepast.</p>
+        </div>
+  </div>
+
+  <!-- Vastzittende box met datum en tijd -->
+
+  <div class="navbarx">
+       
+          <body>
+
+            <div id="timedate">
+              <a id="mon">January</a>
+              <a id="d">1</a>
+              <a id="y">0</a>
+              <a id="h">12</a>
+              <a id="h">:</a>
+              <a id="m">00</a>
+            </div>
+           
+            <script lang=""text/javascript">
+  
+              Number.prototype.pad = function (n) {
+                for (var r = this.toString(); r.length < n; r = 0 + r);
+                return r;
+              };
+  
+              function updateClock() {
+                var now = new Date();
+                var milli = 
+                  min = now.getMinutes(),
+                  hou = now.getHours(),
+                  mo = now.getMonth(),
+                  dy = now.getDate(),
+                  yr = now.getFullYear();
+                var months = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
+                var tags = ["mon", "d", "y", "h", "m"],
+                  corr = [dy,months[mo], yr, hou.pad(2), min.pad(2)];
+                for (var i = 0; i < tags.length; i++)
+                  document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+              }
+              initClock();
+              function initClock() {
+                updateClock();
+                window.setInterval("updateClock()", 1);
+              }
+  
+            </script>
+             
+        </body>
+   
+  </div>
+
+<!--Vastzittende box met weer en plaats-->
+  <div class="navbarx2">
+  <div id="timedate2">
+    <body>    
+      <div>
+       <h1 id="temp"></h1>
+       <div id="location"></div>
+      </div>
+  
+  
+  <script lang=""text/javascript">
+    const key = '';
+    if(key=='') document.getElementById('temp').innerHTML = ('0fc9f2d6aa3b2717eb5d9bf53b61d152');
+    
+    function weatherBallon( cityID ) {
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=Winterswijk&APPID=0fc9f2d6aa3b2717eb5d9bf53b61d152')  
+        .then(function(resp) { return resp.json() }) // Convert data to json
+        .then(function(data) {
+            drawWeather(data);
+        })
+        .catch(function() {
+            // catch any errors
+        });
+    }
+    function drawWeather( d ) {
+      var celcius = Math.round(parseFloat(d.main.temp)-273.15);
+        var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
+      var description = d.weather[0].description; 
+        
+     
+        document.getElementById('temp').innerHTML = celcius + '&deg;';
+        document.getElementById('location').innerHTML = d.name;
+      
+      if( description.indexOf('rain') > 0 ) {
+          document.body.className = 'regenachtig';
+      } else if( description.indexOf('cloudy') > 0 ) {
+          document.body.className = 'bewolkt';
+      } else if( description.indexOf('sunny') > 0 ) {
+          document.body.className = 'zonnig';
+      } else {
+          document.body.className = 'helder';
+      }
+    }
+    window.onload = function() {
+        weatherBallon( 6167865 );
+    }
+  </script>
+  
+  
+  </body>
+</div>
+</div>
+
+ 
+
+  </html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio Timo Breukers</title>
+  <link rel="stylesheet" type="text/css" href="opmaak.css">
+  <link href="https://api.openweathermap.org/data/2.5/weather?q=Winterswijk&APPID=0fc9f2d6aa3b2717eb5d9bf53b61d152" rel="stylesheet"> 
+</head>
+
+<!-- Navigatiebalk -->
+<body>
+
+  <div id="navbar">
+    <div id="logo">Portfolio MSI Timo Breukers</div>
+    <div id="navbar-right">
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Leerdoelen ⌵
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="leerdoelen.html">Opgestelde leerdoelen</a>
+          <a href="ontwikkelingen.html">Ontwikkelingen</a>
+          <a href="conclusie.html">Conclusie</a>
+        </div>
+      </div>
+      <a href="smartme.html">Smart Me</a>
+      <a href="connection.html">Smart Connection</a>
+      <a href="technology.html">Smart Technology</a>
+      <a href="business.html">Smart Business</a>
+      <a href="project.html">Smart Project</a>
+      <a class="active" href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "42px 10px";
+      document.getElementById("logo").style.fontSize = "25px";
+    } else {
+      document.getElementById("navbar").style.padding = "60px 10px";
+      document.getElementById("logo").style.fontSize = "35px";
+    }
+  }
+  </script>
+
+
+  </body>
+
+  <div class="container">
+    <div style="margin-top:210px;padding:15px 15px ">      
+        <p><b><FONT size="+3"><FONT color="#2a639d"> Contact</FONT></FONT></b></p>
+        <p>Welkom op de contactpagina. Hier zijn verschillende contactmogelijkheden beschikbaar!</p>
+        <hr></hr>
+        <p>Socials:</p>
+          <a href= "https://www.linkedin.com/in/timobreukers/"  target="_new">  <img src="https://db3pap003files.storage.live.com/y4m-tAAsHnQb759V83gB2Fgs7ckw5SGOu7yeebheMTjcgF6G15z2kdX4CUkH1Q_gwtBro91gfcnrXcNcMRJ3wGOUsZRt8lYNy5MobDD4M1GUEzt0T4BBM5FyexuLgzrRt6wubbK6kWVxuxRJH7O1feDSjnRG-zBJfp6pQRu0RjYBaRE_IZ3kM6GzNodaxWMUbOS?width=640&height=640&cropmode=none" alt="Trulli" width="50" height="50" ></a>
+          <a href= "https://www.facebook.com/timo.breukers"     target="_new">  <img src="https://db3pap003files.storage.live.com/y4mb0J1GpjxiSUhHQfBd4JMJXiEhgFUgsB-GVcMe5-d__4kihNsoMne1_9BeGEHtNAwANBgQ7K7PUwEbPeaFW-JU2YmMucs8KE_jnmOWA7TH4Hu30gjp-92pgTuYHJtlVfoboxOgh6golsYXVhviBLpq9SsF42zDCOMi5NnbwN6JLQZQs_WnlKG5zc8GlhvpYD7?width=800&height=800&cropmode=none" alt="Trulli" width="50" height="50" ></a>
+          <a href=  "mailto:timobreukers@hotmail.com"           target="_new">  <img src= "https://db3pap003files.storage.live.com/y4mdEUs24rBbqqjtjbdIoAEI7NEpv6KcoVulcsK14V5qS1TiuQXP9j7O0gArr7Lx80bbmIvwUTEkpbshuO2u4GG9OV4ApQLl0Ghhym1oJwETZiJCDBkQeBA4huiVsmA6L14zUhE-qKSkbE-sEn2krIQQYXyCIB9mzBxTGoenIeKmSpkhCuYHMReBi6CWyYZ5NeX?width=512&height=512&cropmode=none" alt="Trulli" width="50" height="50"></a>
+        <br></br>
+          <p>Invulformulier:</p>
+        <div class="row2"> 
+        <div class="column2"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfnAHUAQQbvQRotKWBoZt6IDMo-Q9CjZriFGTEro0VOzKUF-A/viewform?embedded=true" width="640" height="1583" frameborder="0" marginheight="0" marginwidth="0">Laden…</iframe></div>    
+      </div>
+    
+   
+    </div>
+  </div>
+
+  <!-- Vastzittende box met datum en tijd -->
+
+  <div class="navbarx">
+       
+          <body>
+
+            <div id="timedate">
+              <a id="mon">January</a>
+              <a id="d">1</a>
+              <a id="y">0</a>
+              <a id="h">12</a>
+              <a id="h">:</a>
+              <a id="m">00</a>
+            </div>
+           
+            <script lang=""text/javascript">
+  
+              Number.prototype.pad = function (n) {
+                for (var r = this.toString(); r.length < n; r = 0 + r);
+                return r;
+              };
+  
+              function updateClock() {
+                var now = new Date();
+                var milli = 
+                  min = now.getMinutes(),
+                  hou = now.getHours(),
+                  mo = now.getMonth(),
+                  dy = now.getDate(),
+                  yr = now.getFullYear();
+                var months = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
+                var tags = ["mon", "d", "y", "h", "m"],
+                  corr = [dy,months[mo], yr, hou.pad(2), min.pad(2)];
+                for (var i = 0; i < tags.length; i++)
+                  document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+              }
+              initClock();
+              function initClock() {
+                updateClock();
+                window.setInterval("updateClock()", 1);
+              }
+  
+            </script>
+             
+        </body>
+   
+  </div>
+
+<!--Vastzittende box met weer en plaats-->
+  <div class="navbarx2">
+  <div id="timedate2">
+    <body>    
+      <div>
+       <h1 id="temp"></h1>
+       <div id="location"></div>
+      </div>
+  
+  
+  <script lang=""text/javascript">
+    const key = '';
+    if(key=='') document.getElementById('temp').innerHTML = ('0fc9f2d6aa3b2717eb5d9bf53b61d152');
+    
+    function weatherBallon( cityID ) {
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=Winterswijk&APPID=0fc9f2d6aa3b2717eb5d9bf53b61d152')  
+        .then(function(resp) { return resp.json() }) // Convert data to json
+        .then(function(data) {
+            drawWeather(data);
+        })
+        .catch(function() {
+            // catch any errors
+        });
+    }
+    function drawWeather( d ) {
+      var celcius = Math.round(parseFloat(d.main.temp)-273.15);
+        var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
+      var description = d.weather[0].description; 
+        
+     
+        document.getElementById('temp').innerHTML = celcius + '&deg;';
+        document.getElementById('location').innerHTML = d.name;
+      
+      if( description.indexOf('rain') > 0 ) {
+          document.body.className = 'regenachtig';
+      } else if( description.indexOf('cloudy') > 0 ) {
+          document.body.className = 'bewolkt';
+      } else if( description.indexOf('sunny') > 0 ) {
+          document.body.className = 'zonnig';
+      } else {
+          document.body.className = 'helder';
+      }
+    }
+    window.onload = function() {
+        weatherBallon( 6167865 );
+    }
+  </script>
+  
+  
+  </body>
+</div>
+</div>
+
+ 
+
+  </html>

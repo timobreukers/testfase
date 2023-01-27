@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio Timo Breukers</title>
+  <link rel="stylesheet" type="text/css" href="opmaak.css">
+  <link href="https://api.openweathermap.org/data/2.5/weather?q=Winterswijk&APPID=0fc9f2d6aa3b2717eb5d9bf53b61d152" rel="stylesheet"> 
+</head>
+
+<!-- Navigatiebalk -->
+<body>
+
+  <div id="navbar">
+    <div id="logo">Portfolio MSI Timo Breukers</div>
+    <div id="navbar-right">
+      <a class="active" href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Leerdoelen ⌵
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="leerdoelen.html">Opgestelde leerdoelen</a>
+          <a href="ontwikkelingen.html">Ontwikkelingen</a>
+          <a href="conclusie.html">Conclusie</a>
+        </div>
+      </div>
+      <a href="smartme.html">Smart Me</a>
+      <a href="connection.html">Smart Connection</a>
+      <a href="technology.html">Smart Technology</a>
+      <a href="business.html">Smart Business</a>
+      <a href="project.html">Smart Project</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "42px 10px";
+      document.getElementById("logo").style.fontSize = "25px";
+    } else {
+      document.getElementById("navbar").style.padding = "60px 10px";
+      document.getElementById("logo").style.fontSize = "35px";
+    }
+  }
+  </script>
+
+
+  </body>
+
+  <div class="container">
+    <div style="margin-top:210px;padding:15px 15px ">
+   
+      <p>
+        <img src="https://db3pap003files.storage.live.com/y4mQ3wb8IPWWc3UvNsv1aoE_SuyZCaBSunmPUmDb7ETIBQRZkzLqqfEGR7PKILEZE2HdUDnQFbMIrO_bMBvfbU8mGA5EjGq3iu6Es3nV3p8nzwVdYgJh2zmwfqdAyfJuciaa-QpV0XI-5uTsVjG0ogIZMnSh-nhWtEtdD8gIRiMx2PcWzwPaM4T-QfIDSXprySS?width=1142&height=469&cropmode=none" width="700" height="288"</p>
+        <p><b><FONT size="+3"><FONT color="#2a639d"> Introductie</FONT></FONT></b></p>
+        <p> Mijn naam is Timo Breukers, 23 jaar oud en ik kom uit Winterswijk. Op Hogeschool Saxion in Enschede zit ik nu in het
+        vierde jaar van de opleiding Bedrijfskunde. Naast school ben ik werkzaam als zaterdag- en vakantiehulp bij <a href="https://www.breukers.nl/"
+          target="_new">Breukers Bouwmaterialen</a> hier doe ik veel verschillende werkzaamheden zoals zand mengen, klanten en leveranciers laden en lossen, bestellingen klaar zetten, verkoop en administratie.</p>  
+          <p>In mijn vrije tijd vind ik het onder andere leuk om met voetbal bezig te zijn. Zelf voetbal ik in het eerste elftal bij vv MEC en daarnaast support ik elke twee weken De Graafschap tijdens zijn thuiswedstrijden.</p>  
+      <p>Momenteel ben ik bezig met de Minor Smart Industry aan de HAN in Nijmegen. Ik heb deze gekozen omdat het mij interessant lijkt om meer kennis op te doen van de technische wereld. Zelf ben ik niet heel technisch aangelegd maar ik wil graag de basis leren van de bestaande en toekomstige technieken zodat ik hier later in mijn werkcarrière profijt van heb. Doordat deze minor de basis van de technische wereld combineert met bedrijfskunde, was dit voor mij de perfecte minor!</p>
+      <p>Zonder enige ervaring in website bouwen, is dit portfolio opgesteld in de vorm van een website. Aan de hand van de verkregen workshops en het doen van online research is dit uiteindelijk het eindresultaat geworden, een eindresultaat waar ik zelf erg tevreden mee ben. Als korte toelichting bij de website zijn onder het kopje 'Leerdoelen' de algemene opgestelde leerdoelen, ontwikkelingen en conclusies te vinden. Onder de vijf verschillende modules 'Smart Me', 'Smart Connection', 'Smart Technology', 'Smart Business' en 'Smart Project' zijn specifiek per module mijn ervaringen, leermomenten en bevindingen te lezen. Onder het kopje 'Smart Project' is tevens het eindproduct te vinden dat opgeleverd is tijdens het project voor Impact Smart Solutions. Vrijwel alle foto's op de website kunnen vergroot worden door er simpelweg op te klikken en de overige bestanden zijn via de aangegeven knoppen te vergroten.</p>
+      <p><b>Leeswijzer:</b> U kunt het beste beginnen met het lezen van de webpagina 'Opgestelde leerdoelen' (onder het kopje 'Leerdoelen'). Daaropvolgend kunnen de modules doorgenomen worden en aansluitend daarop 'Ontwikkelingen' en 'Conclusie'(wederom onder het kopje 'Leerdoelen'). Voor contactgegevens zie 'Contact'.</p>
+    </div>
+  </div>
+
+  <!-- Vastzittende box met datum en tijd -->
+
+  <div class="navbarx">
+       
+          <body>
+
+            <div id="timedate">
+              <a id="mon">January</a>
+              <a id="d">1</a>
+              <a id="y">0</a>
+              <a id="h">12</a>
+              <a id="h">:</a>
+              <a id="m">00</a>
+            </div>
+           
+            <script lang=""text/javascript">
+  
+              Number.prototype.pad = function (n) {
+                for (var r = this.toString(); r.length < n; r = 0 + r);
+                return r;
+              };
+  
+              function updateClock() {
+                var now = new Date();
+                var milli = 
+                  min = now.getMinutes(),
+                  hou = now.getHours(),
+                  mo = now.getMonth(),
+                  dy = now.getDate(),
+                  yr = now.getFullYear();
+                var months = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
+                var tags = ["mon", "d", "y", "h", "m"],
+                  corr = [dy,months[mo], yr, hou.pad(2), min.pad(2)];
+                for (var i = 0; i < tags.length; i++)
+                  document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+              }
+              initClock();
+              function initClock() {
+                updateClock();
+                window.setInterval("updateClock()", 1);
+              }
+  
+            </script>
+             
+        </body>
+   
+  </div>
+
+<!--Vastzittende box met weer en plaats-->
+  <div class="navbarx2">
+  <div id="timedate2">
+    <body>    
+      <div>
+       <h1 id="temp"></h1>
+       <div id="location"></div>
+      </div>
+  
+  
+  <script lang=""text/javascript">
+    const key = '';
+    if(key=='') document.getElementById('temp').innerHTML = ('0fc9f2d6aa3b2717eb5d9bf53b61d152');
+    
+    function weatherBallon( cityID ) {
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=Winterswijk&APPID=0fc9f2d6aa3b2717eb5d9bf53b61d152')  
+        .then(function(resp) { return resp.json() }) // Convert data to json
+        .then(function(data) {
+            drawWeather(data);
+        })
+        .catch(function() {
+            // catch any errors
+        });
+    }
+    function drawWeather( d ) {
+      var celcius = Math.round(parseFloat(d.main.temp)-273.15);
+        var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
+      var description = d.weather[0].description; 
+        
+     
+        document.getElementById('temp').innerHTML = celcius + '&deg;';
+        document.getElementById('location').innerHTML = d.name;
+      
+      if( description.indexOf('rain') > 0 ) {
+          document.body.className = 'regenachtig';
+      } else if( description.indexOf('cloudy') > 0 ) {
+          document.body.className = 'bewolkt';
+      } else if( description.indexOf('sunny') > 0 ) {
+          document.body.className = 'zonnig';
+      } else {
+          document.body.className = 'helder';
+      }
+    }
+    window.onload = function() {
+        weatherBallon( 6167865 );
+    }
+  </script>
+  
+  
+  </body>
+</div>
+</div>
+
+ 
+
+  </html>
